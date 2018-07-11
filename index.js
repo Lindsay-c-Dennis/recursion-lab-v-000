@@ -16,8 +16,11 @@ function reverseString(string) {
 }
 
 function isPalindrome(string) {
+  string = string.split('');
+  let palStatus = true;
   if (string.length > 1) {
     if (string.pop() === string.shift()) {
+      console.log(string);
       
     }
   } 
