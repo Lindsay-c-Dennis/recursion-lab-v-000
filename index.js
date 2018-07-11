@@ -20,6 +20,7 @@ function isPalindrome(string) {
   let palStatus = true;
   if (string.length > 1) {
     if (string.pop() === string.shift()) {
+      string = string.subset(1, string.length-1);
       console.log(string);
       
     }
